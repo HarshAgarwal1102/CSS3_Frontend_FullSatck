@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Selector</title>
+    <style>
+        #login{
+            display: none;
+            border: 2px solid green;
+        }
+        a{
+            background-color: blueviolet;
+            text-decoration: none;
+            width: 20%;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        #login:target{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Target Selector</h2>
+    <a href="#login">Login</a>
+    <div id="login">
+        <h3>Login Form</h3>
+        <form>
+            <table>
+                <tr>
+                    <td>Userid</td>
+                    <td><input type="text" placeholder="Type Userid Here"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" placeholder="Type Password Here"></td>
+                </tr>
+                <tr>
+                    <td><button>Login</button></td>
+                    <td><button>Reset</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <a href="#">Close It</a>
+</body>
+</html>

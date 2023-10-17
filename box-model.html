@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Example</title>
+    <style>
+        *{
+            /* Generic Way */
+            box-sizing: border-box;
+            /* Chrome  , Brave, Safari */
+            -webkit-box-sizing: border-box;
+            /* Firefox */
+            -moz-box-sizing: border-box;
+            /* IE */
+            -ms-box-sizing:border-box;
+            /* Opera */
+            -moz-box-sizing: border-box;
+
+        }
+        .col{
+            width: 33%;
+            border: 1px solid green;
+            padding: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <h2>First Column</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde non commodi porro! Dicta possimus veniam eaque esse iusto dolorem harum. Aliquid, aut sapiente beatae dolor repellat pariatur officiis recusandae totam.
+            </p>
+        </div>
+        <div class="col">
+            <h2>Second Column</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde non commodi porro! Dicta possimus veniam eaque esse iusto dolorem harum. Aliquid, aut sapiente beatae dolor repellat pariatur officiis recusandae totam.
+            </p>
+        </div>
+        <div class="col">
+            <h2>Third Column</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde non commodi porro! Dicta possimus veniam eaque esse iusto dolorem harum. Aliquid, aut sapiente beatae dolor repellat pariatur officiis recusandae totam.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
