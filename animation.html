@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            border: 2px solid orange;
+        }
+        img{
+            width: 10%;
+            height: 10%;
+            animation: bikeanim 7s infinite linear ;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;
+             */
+            /* animation-name: bikeanim;
+            animation-duration: 7s;
+            animation-iteration-count: 4;
+            /* animation-direction: alternate-reverse; */
+            /* animation-direction: alternate; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-timing-function: ease-in;
+            animation-timing-function: ease-out; */
+            /* animation-timing-function: linear; */ 
+        }
+        div:hover img{
+            animation-play-state: paused;
+        }
+        @keyframes bikeanim {
+            0%{
+                transform: translate(0px 0px) rotate(0deg);
+            }
+            25%{
+                transform: translate(1200px, 0px) rotate(0deg);
+            }
+            30%{
+                transform: translate(1200px, 0 ) rotate(90deg);
+            }
+            50%{
+                transform: translate(1200px, 700px) rotate(90deg);
+            }
+            55%{
+                transform: translate(1200px, 700px) rotate(180deg);
+            }
+            75%{
+                transform: translate(0px, 700px) rotate(180deg);
+            }
+            80%{
+                transform: translate(0px, 700px) rotate(270deg);
+            }
+            100%{
+                transform: translate(0px,0px) rotate(270deg);
+            }
+            /* from {
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(1200px);
+            } */
+        }
+    </style>
+</head>
+<body>
+        <div>
+            <!-- <img src="images/car.png" alt=""> -->
+            <img src="images/bike.png" alt="">
+        </div>
+</body>
+</html>

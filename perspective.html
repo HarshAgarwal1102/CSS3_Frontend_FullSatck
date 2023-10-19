@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            border: 3px solid orange;
+            margin: 0 auto;
+            perspective: 220px;
+        }
+        img{
+            /* transform-origin: right; */
+            transition-duration: 2s;
+            width: 100%;
+            height: inherit;
+        }
+        div:hover img{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/ZypiNEdbU0wwCF0GMJ3zoA/1200x675mf.jpg" alt="">
+    </div>
+</body>
+</html>
