@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .row{
+           display: flex; 
+           /* justify-content: center; */
+           /* justify-content: flex-start; */
+           /* justify-content: flex-end; */
+           /* justify-content: space-around; */
+           /* justify-content: space-between; */
+           /* justify-content: space-evenly; */
+           /* align-items: flex-start; */
+           /* align-items: flex-end; */
+           /* align-items: stretch; */
+           /* align-items: center; */
+           align-items: baseline;
+        }
+        .col{
+            width: 25%;
+            padding: 10px;
+            border: 2px solid orangered;
+        }
+        .col-1{
+            flex:1
+        }
+        .col-2{
+            flex:2;
+           align-self: center;
+        }
+        .col-3{
+            flex:1
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col col-1">
+            <h2>Column 1</h2>
+            <p>
+                
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe magnam aperiam necessitatibus consequatur sapiente qui quod! Aut necessitatibus dolor ab impedit consequatur perferendis esse atque, ducimus repellat explicabo! Facere, similique.</p>
+        </div>
+        <div class="col col-2">
+            <h2>Column 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perspiciatis dolor minima blanditiis deleniti. Veniam recusandae at amet vero numquam quo veritatis sit! Facilis necessitatibus soluta cupiditate nesciunt quis accusamus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum sapiente culpa, voluptas nihil, saepe ad similique quasi voluptatibus, illum minus dolorum in tempora beatae commodi impedit excepturi quae quia voluptate!</p>    
+            </div>
+        <div class="col col-3">
+            <h2>Column3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora magni, asperiores accusantium delectus fugit maiores possimus similique ipsam dolorem distinctio pariatur. Ea quisquam expedita cumque iusto corporis officia temporibus exercitationem.</p>
+        </div>
+    </div>
+</body>
+</html>
